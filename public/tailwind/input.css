@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "yekan";
+    src: url("../fonts/yekan/IRANYekanWeb.eot");
+    /* فرمت eot برای مرورگرهای قدیمی */
+    src: url("../fonts/yekan/IRANYekanWeb.eot?#iefix") format("embedded-opentype"),
+        /* eot برای IE */
+        url("../fonts/yekan/IRANYekanWeb.woff2") format("woff2"),
+        /* فرمت woff2 برای مرورگرهای مدرن */
+        url("../fonts/yekan/IRANYekanWeb.woff") format("woff"),
+        /* فرمت woff */
+        url("../fonts/yekan/IRANYekanWeb.ttf") format("truetype");
+    /* فرمت ttf */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "yekan", sans-serif;
+}
+
+
+/* Swiper Styles */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    opacity: 0.5;
+    width: 6px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+    background-color: #4ca8af;
+    transform: scale(1.1);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+
+/* icon slider */
+
+.swiper-container-mobile .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 4px;
+    width: auto;
+    /* کاهش فاصله بین اسلایدها */
+}
+
+.swiper-container-mobile .swiper-slide img {
+    width: 40px;
+    /* اندازه ثابت برای آیکون */
+    height: 40px;
+    /* اندازه ثابت برای آیکون */
+    object-fit: cover;
+    margin-bottom: 2px;
+    /* کاهش فاصله بین تصویر و متن */
+}
+
+/* مخفی کردن متن در حالت موبایل */
+.swiper-container-mobile .swiper-slide span {
+    display: none;
+    /* مخفی کردن متن */
+}
+
+/* حذف فاصله زیر آخرین اسلاید */
+.swiper-container-mobile .swiper-slide:last-child {
+    margin-bottom: 0;
+    /* حذف فاصله زیر آخرین اسلاید */
+}
+
+/* icon slider */
+
+/* AMAZING SLIDER */
+.redSwiper .swiper-wrapper .current-price {
+    width: 16px;
+    height: 16px;
+}
+
+/* AMAZING SLIDER */
+
+/* Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    box-shadow: inset 0 0 2px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+/* Pagination Bullets */
+.swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    transition: 300ms;
+}
+
+.swiper-pagination-bullet-active {
+    width: 16px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    background-color: whitesmoke;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+/* حالت اولیه: فقط متن سوپرمارکت و آیکن نمایش داده شود */
+#supermarketButton .expanded-text {
+    display: none;
+    /* مخفی کردن متن "تنوع بالا و پرتخفیف" */
+}
+
+/* زمانی که اسکرول بیشتر از 50px باشد، نمایش داده شود */
+#supermarketButton.expanded .expanded-text {
+    display: inline-flex;
+    /* نمایش متن "تنوع بالا و پرتخفیف" */
+}
+
+/* تنظیمات آیکن و متن در کنار هم */
+#supermarketButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* برای حالت موبایل و تبلت */
+@media (max-width: 768px) {
+    #supermarketButton {
+        font-size: 14px;
+        /* فونت کوچکتر */
+    }
+
+    #supermarketButton img {
+        width: 24px;
+        /* اندازه آیکن برای موبایل کوچکتر می‌شود */
+        height: 24px;
+    }
+}

@@ -1,0 +1,7 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; fill: rgb(161, 163, 168); font-size: 24px;" width="24" height="24">
+    <symbol xmlns="http://www.w3.org/2000/svg" id="8ebfc0f9-6f84-4c66-8de2-4b3ddeb1358c" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M11.353 17.521L5.511 20.86a1 1 0 01-1.496-.869v-6.719l4.627-1.436a1 1 0 011.257.676l1.454 5.01zm.824-.47l7.33-4.188a1 1 0 000-1.737l-3.019-1.725-5.055 1.569a1 1 0 00-.664 1.234l1.408 4.847zm3.217-8.275l-6.738-3.85 1.298 4.472a1 1 0 001.257.676l4.183-1.298zm-11.38 3.531L8.42 10.94a1 1 0 00.664-1.234L7.506 4.269 5.51 3.129a1 1 0 00-1.496.868v8.31zm15.99-2.05c1.343.768 1.343 2.706 0 3.474L6.006 21.728c-1.333.762-2.992-.2-2.992-1.737V3.997c0-1.536 1.659-2.498 2.992-1.736l13.996 7.997z" clip-rule="evenodd" stroke="rgb(161, 163, 168)" stroke-width="1"></path>
+    </symbol>
+    <use href="#8ebfc0f9-6f84-4c66-8de2-4b3ddeb1358c"></use>
+  </svg>
+  

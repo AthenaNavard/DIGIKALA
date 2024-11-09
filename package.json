@@ -1,0 +1,16 @@
+{
+  "name": "digikala-tj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind":"npx tailwindcss -i ./public/tailwind/input.css -o ./public/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.4.9"
+  }
+}
