@@ -588,10 +588,6 @@ video {
   }
 }
 
-.collapse {
-  visibility: collapse;
-}
-
 .fixed {
   position: fixed;
 }
@@ -1032,10 +1028,6 @@ video {
 
 .h-\[calc\(100\%-44px\)\] {
   height: calc(100% - 44px);
-}
-
-.h-\[calc\(95vh-170px\)\] {
-  height: calc(95vh - 170px);
 }
 
 .h-\[inherit\] {
@@ -2084,11 +2076,6 @@ video {
   line-height: 1rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2099,10 +2086,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .leading-10 {
