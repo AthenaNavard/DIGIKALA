@@ -1,0 +1,19 @@
+{
+    "name": "user-auth-api",
+    "version": "1.0.0",
+    "main": "server.js",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.3",
+        "cors": "^2.8.5",
+        "express": "^4.21.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.13.22"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "seed": "node seed.js"
+    },
+    "author": "Your Name",
+    "license": "ISC"
+}
